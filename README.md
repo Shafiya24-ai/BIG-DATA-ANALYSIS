@@ -2,34 +2,34 @@
 
 **COMPANY** : CODETECH IT SOLUTIONS
 
-NAME : SHAIK SHAFIYA
+**NAME** : SHAIK SHAFIYA
 
-INTERN ID : CT06DF1367
+**INTERN ID** : CT06DF1367
 
-DOMAIN : DATA ANALYTICS
+**DOMAIN** : DATA ANALYTICS
 
-DURATION : 6 WEEKS
+**DURATION** : 6 WEEKS
 
-MENTOR : NEELA SANTHOSH KUMAR
+**MENTOR** : NEELA SANTHOSH KUMAR
 
-Customer Transaction Dashboard with Statistical and Visual Insights
+# Customer Transaction Dashboard with Statistical and Visual Insights
 
-Project Overview
+# Project Overview
 
 The Customer Transaction Dashboard project provides a complete pipeline for analyzing large-scale customer transaction data, from initial ingestion to insightful visualizations. The goal is to enable businesses to better understand customer behavior, segment audiences, and assess the performance of sales categories over time.
 
 By leveraging the distributed processing capabilities of Apache Spark (PySpark) alongside the expressive visualization features of Seaborn and Matplotlib, this solution offers a scalable and interactive approach to business intelligence. The project mimics a real-world retail analytics scenario where understanding customer spend patterns, gender-based behaviors, and category-level performance is key to strategic decision-making.
 
-Tools and Technologies Used
+# Tools and Technologies Used
 
-Technologies and Libraries:
+**Technologies and Libraries:**
 
-Apache Spark (PySpark): The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
-Pandas: Used after Spark processing to convert data into a more manageable form for local analysis. It allows flexible reshaping, filtering, and preparation of data before visualization.
-Seaborn: A powerful statistical visualization library built on Matplotlib. It's used to generate heatmaps, bar plots, and trend lines for clear and insightful representation of metrics.
-Matplotlib: Handles plot rendering and fine-tuning. It allows customization of charts and is used to export high-quality figures like the revenue heatmap.
+-**Apache Spark (PySpark):** The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
+-**Pandas:** Used after Spark processing to convert data into a more manageable form for local analysis. It allows flexible reshaping, filtering, and preparation of data before visualization.
+-**Seaborn:** A powerful statistical visualization library built on Matplotlib. It's used to generate heatmaps, bar plots, and trend lines for clear and insightful representation of metrics.
+-**Matplotlib:** Handles plot rendering and fine-tuning. It allows customization of charts and is used to export high-quality figures like the revenue heatmap.
 
-Programming Language:
+# Programming Language:
 
 Python (3.8+): The core programming language used throughout the project. Python’s ecosystem supports data manipulation, visualization, and integration with big data tools.
 
