@@ -137,6 +137,8 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
  **Visual Outputs:**
   - Bar Plot: Total spending by gender
 
+  - ![Image](https://github.com/user-attachments/assets/3e2c1800-fa5b-4eba-b251-908c8ea35505)
+
   - Bar Plot: Revenue by product category
 
   - Line Plot: Monthly revenue trends
