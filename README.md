@@ -57,81 +57,80 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
 
 # Project Objectives and Methodology
 
-### 1. Data Ingestion and Timestamp Engineering
+ 1. **Data Ingestion and Timestamp Engineering**
 
-   The CSV file is loaded into a Spark DataFrame using read.csv() with schema inference enabled.
+   - The CSV file is loaded into a Spark DataFrame using read.csv() with schema inference enabled.
    
-   The timestamp is parsed into a proper datetime format using to_timestamp.
+   - The timestamp is parsed into a proper datetime format using to_timestamp.
    
-   Two new columns year and month are extracted for time-based grouping and analysis.
+   - Two new columns year and month are extracted for time-based grouping and analysis.
 
-### 2. Data Cleaning
+ 2. **Data Cleaning** 
 
-   Any rows missing essential data (customer_id, purchase_amount, timestamp, or purchase_category) are removed.
+   - Any rows missing essential data (customer_id, purchase_amount, timestamp, or purchase_category) are removed.
    
-   The resulting clean DataFrame ensures reliable analytics.
+   - The resulting clean DataFrame ensures reliable analytics.
 
-### 3. Core Metric Calculations
+ 3. **Core Metric Calculations**
 
-  Total Transactions: Counted using .count() on the cleaned DataFrame.
+  - Total Transactions: Counted using .count() on the cleaned DataFrame.
   
-  Total Revenue: Aggregated using sum("purchase_amount").
+  - Total Revenue: Aggregated using sum("purchase_amount").
   
-  Average Purchase per Customer: Calculated by summing purchases per customer, then averaging those totals.
+  - Average Purchase per Customer: Calculated by summing purchases per customer, then averaging those totals.
 
-### 4. Gender-Based Spending Analysis
+  4. **Gender-Based Spending Analysis**
 
-   Customers are grouped by gender.
+   - Customers are grouped by gender.
    
-   Aggregates include:
+   - Aggregates include:
    
-   Unique customer count
+   - Unique customer count
    
-   Total revenue
+   - Total revenue
    
-   Average transaction value
+   - Average transaction value
    
-   The results are printed and visualized using a bar chart.
+   - The results are printed and visualized using a bar chart.
 
-### 5. Revenue by Purchase Category
+ 5. **Revenue by Purchase Category**
 
-    Transactions are grouped by purchase_category.
+    - Transactions are grouped by purchase_category.
     
-    Total sales are computed and sorted in descending order to highlight best-performing categories.
+    - Total sales are computed and sorted in descending order to highlight best-performing categories.
     
-    Results are shown via a horizontal bar chart using Seaborn’s barplot.
+    - Results are shown via a horizontal bar chart using Seaborn’s barplot.
 
-### 6. Monthly Revenue Trend
+ 6. **Monthly Revenue Trend**
  
+    - Transactions are grouped by year and month.
     
-    Transactions are grouped by year and month.
+    - Total sales per month are calculated and visualized in a line plot to reveal revenue trends over time.
+
+ 7. **Revenue Heatmap (Year vs. Month)**
+
+    - A pivot table is created using Pandas to map monthly_sales against year and month.
     
-    Total sales per month are calculated and visualized in a line plot to reveal revenue trends over time.
+    - A Seaborn heatmap displays temporal revenue concentration, highlighting peak months and seasonal effects.
 
-### 7. Revenue Heatmap (Year vs. Month)
+ 8. **Visualization Standards**
 
-    A pivot table is created using Pandas to map monthly_sales against year and month.
-    
-    A Seaborn heatmap displays temporal revenue concentration, highlighting peak months and seasonal effects.
-
-### 8. Visualization Standards
-
-   All plots use a consistent style (whitegrid) and high-resolution settings for presentation.
+   - All plots use a consistent style (whitegrid) and high-resolution settings for presentation.
    
-   Plots are configured with tight layout adjustments to ensure clarity.
+   - Plots are configured with tight layout adjustments to ensure clarity.
    
-   This makes them suitable for export to reports or dashboards.
+   - This makes them suitable for export to reports or dashboards.
 
 ### Outputs Generated
 
-Terminal Outputs:
+**Terminal Outputs:**
   Total number of transactions
   Total and average revenue
   Summary statistics by gender
   Revenue breakdown by product category
   Monthly sales figures
 
-Visual Outputs:
+**Visual Outputs:**
   Bar Plot: Total spending by gender
   Bar Plot: Revenue by product category
   Line Plot: Monthly revenue trends
