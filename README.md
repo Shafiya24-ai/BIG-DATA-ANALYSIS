@@ -24,35 +24,35 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
 
 ### Technologies and Libraries:
 
- Apache Spark (PySpark): The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
+ -**Apache Spark (PySpark):** The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
 
- Pandas: Used after Spark processing to convert data into a more manageable form for local analysis. It allows flexible reshaping, filtering, and preparation of data before visualization.
+ -**Pandas:** Used after Spark processing to convert data into a more manageable form for local analysis. It allows flexible reshaping, filtering, and preparation of data before visualization.
  
- Seaborn: A powerful statistical visualization library built on Matplotlib. It's used to generate heatmaps, bar plots, and trend lines for clear and insightful representation of metrics.
+ -**Seaborn:** A powerful statistical visualization library built on Matplotlib. It's used to generate heatmaps, bar plots, and trend lines for clear and insightful representation of metrics.
  
- Matplotlib:Handles plot rendering and fine-tuning. It allows customization of charts and is used to export high-quality figures like the revenue heatmap.
+ -**Matplotlib:** Handles plot rendering and fine-tuning. It allows customization of charts and is used to export high-quality figures like the revenue heatmap.
 
-# Programming Language:
+### Programming Language:
 
-**Python (3.8+):** The core programming language used throughout the project. Python’s ecosystem supports data manipulation, visualization, and integration with big data tools.
+-**Python (3.8+):** The core programming language used throughout the project. Python’s ecosystem supports data manipulation, visualization, and integration with big data tools.
 
-# Platform:
+### Platform:
 
-**Google Colab:** A free, cloud-based Jupyter notebook environment that supports PySpark and Python out of the box. It allows interactive development, data visualization, and execution of big data workflows without requiring any local installation or setup.
+-**Google Colab:** A free, cloud-based Jupyter notebook environment that supports PySpark and Python out of the box. It allows interactive development, data visualization, and execution of big data workflows without requiring any local installation or setup.
 
-# Dataset:
+### Dataset:
 
-**File Name:** sample_large_customer_transactions.csv
+-**File Name:** sample_large_customer_transactions.csv
 
-**File Format:** CSV
+-**File Format:** CSV
 
-**Data Volume:** Large-scale transactional data
+-**Data Volume:** Large-scale transactional data
 
-**Key Columns:**
-   customer_id: Unique identifier for each customer
-   timestamp: Date and time of purchase
-   purchase_amount: Total amount spent in a transaction
-   purchase_category: Product or category purchased
+-**Key Columns:**
+   customer_id: Unique identifier for each customer,
+   timestamp: Date and time of purchase,
+   purchase_amount: Total amount spent in a transaction,
+   purchase_category: Product or category purchased,
    gender: Customer gender
 
 # Project Objectives and Methodology
