@@ -22,12 +22,15 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
 
 # Tools and Technologies Used
 
-**Technologies and Libraries:**
+### Technologies and Libraries:**
 
--**Apache Spark (PySpark):** The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
--**Pandas:** Used after Spark processing to convert data into a more manageable form for local analysis. It allows flexible reshaping, filtering, and preparation of data before visualization.
--**Seaborn:** A powerful statistical visualization library built on Matplotlib. It's used to generate heatmaps, bar plots, and trend lines for clear and insightful representation of metrics.
--**Matplotlib:** Handles plot rendering and fine-tuning. It allows customization of charts and is used to export high-quality figures like the revenue heatmap.
+ Apache Spark (PySpark): The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
+
+ Pandas: Used after Spark processing to convert data into a more manageable form for local analysis. It allows flexible reshaping, filtering, and preparation of data before visualization.
+ 
+ Seaborn: A powerful statistical visualization library built on Matplotlib. It's used to generate heatmaps, bar plots, and trend lines for clear and insightful representation of metrics.
+ 
+ Matplotlib:Handles plot rendering and fine-tuning. It allows customization of charts and is used to export high-quality figures like the revenue heatmap.
 
 # Programming Language:
 
