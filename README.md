@@ -124,17 +124,24 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
 ### Outputs Generated
 
 **Terminal Outputs:**
-  Total number of transactions
-  Total and average revenue
-  Summary statistics by gender
-  Revenue breakdown by product category
-  Monthly sales figures
+  - Total number of transactions
 
-**Visual Outputs:**
-  Bar Plot: Total spending by gender
-  Bar Plot: Revenue by product category
-  Line Plot: Monthly revenue trends
-  Heatmap: Year-Month revenue distribution
+  - Total and average revenue
+
+  - Summary statistics by gender
+
+  - Revenue breakdown by product category
+
+  - Monthly sales figures
+
+ **Visual Outputs:**
+  - Bar Plot: Total spending by gender
+
+  - Bar Plot: Revenue by product category
+
+  - Line Plot: Monthly revenue trends
+
+  - Heatmap: Year-Month revenue distribution
 
 
 
