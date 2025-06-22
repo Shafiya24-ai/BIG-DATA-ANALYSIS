@@ -22,7 +22,7 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
 
 # Tools and Technologies Used
 
-### Technologies and Libraries:**
+### Technologies and Libraries:
 
  Apache Spark (PySpark): The primary engine for handling and processing large-scale data. It enables distributed computing, making it efficient to clean, transform, and analyze big datasets.
 
@@ -34,75 +34,95 @@ By leveraging the distributed processing capabilities of Apache Spark (PySpark) 
 
 # Programming Language:
 
-Python (3.8+): The core programming language used throughout the project. Python’s ecosystem supports data manipulation, visualization, and integration with big data tools.
+**Python (3.8+):** The core programming language used throughout the project. Python’s ecosystem supports data manipulation, visualization, and integration with big data tools.
 
-Platform:
+# Platform:
 
-Google Colab: A free, cloud-based Jupyter notebook environment that supports PySpark and Python out of the box. It allows interactive development, data visualization, and execution of big data workflows without requiring any local installation or setup.
+**Google Colab:** A free, cloud-based Jupyter notebook environment that supports PySpark and Python out of the box. It allows interactive development, data visualization, and execution of big data workflows without requiring any local installation or setup.
 
-Dataset:
+# Dataset:
 
-File Name: sample_large_customer_transactions.csv
-File Format: CSV
-Data Volume: Large-scale transactional data
-Key Columns:
+**File Name:** sample_large_customer_transactions.csv
+
+**File Format:** CSV
+
+**Data Volume:** Large-scale transactional data
+
+**Key Columns:**
    customer_id: Unique identifier for each customer
    timestamp: Date and time of purchase
    purchase_amount: Total amount spent in a transaction
    purchase_category: Product or category purchased
    gender: Customer gender
 
-Project Objectives and Methodology
+# Project Objectives and Methodology
 
-1. Data Ingestion and Timestamp Engineering
+### 1. Data Ingestion and Timestamp Engineering
 
    The CSV file is loaded into a Spark DataFrame using read.csv() with schema inference enabled.
+   
    The timestamp is parsed into a proper datetime format using to_timestamp.
+   
    Two new columns year and month are extracted for time-based grouping and analysis.
 
-2. Data Cleaning
+### 2. Data Cleaning
 
    Any rows missing essential data (customer_id, purchase_amount, timestamp, or purchase_category) are removed.
+   
    The resulting clean DataFrame ensures reliable analytics.
 
-3. Core Metric Calculations
+### 3. Core Metric Calculations
 
   Total Transactions: Counted using .count() on the cleaned DataFrame.
+  
   Total Revenue: Aggregated using sum("purchase_amount").
+  
   Average Purchase per Customer: Calculated by summing purchases per customer, then averaging those totals.
 
-4. Gender-Based Spending Analysis
+### 4. Gender-Based Spending Analysis
 
    Customers are grouped by gender.
+   
    Aggregates include:
+   
    Unique customer count
+   
    Total revenue
+   
    Average transaction value
+   
    The results are printed and visualized using a bar chart.
 
-5. Revenue by Purchase Category
+### 5. Revenue by Purchase Category
 
     Transactions are grouped by purchase_category.
+    
     Total sales are computed and sorted in descending order to highlight best-performing categories.
+    
     Results are shown via a horizontal bar chart using Seaborn’s barplot.
 
-6. Monthly Revenue Trend
+### 6. Monthly Revenue Trend
  
+    
     Transactions are grouped by year and month.
+    
     Total sales per month are calculated and visualized in a line plot to reveal revenue trends over time.
 
-7. Revenue Heatmap (Year vs. Month)
+### 7. Revenue Heatmap (Year vs. Month)
 
     A pivot table is created using Pandas to map monthly_sales against year and month.
+    
     A Seaborn heatmap displays temporal revenue concentration, highlighting peak months and seasonal effects.
 
-8. Visualization Standards
+### 8. Visualization Standards
 
    All plots use a consistent style (whitegrid) and high-resolution settings for presentation.
+   
    Plots are configured with tight layout adjustments to ensure clarity.
+   
    This makes them suitable for export to reports or dashboards.
 
-Outputs Generated
+### Outputs Generated
 
 Terminal Outputs:
   Total number of transactions
